@@ -1,16 +1,12 @@
 <template>
-    <button :style="control.style">{{control.name}}</button>
+  <button :style="control.style">{{control.name}}</button>
 </template>
 
 <script>
 export default {
   name: "MyButton",
   props: ["control"],
-  created() {
-    if (this.control.name === "button") {
-      console.log("Hello");
-    }
-  }
+  created() {}
 };
 </script>
 
